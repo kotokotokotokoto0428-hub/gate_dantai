@@ -1,1 +1,184 @@
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>団体利用のご案内</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", "Yu Gothic", sans-serif;
+  background: #f2f6f8;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #254e68, #427b91);
+  color: white;
+  padding: 35px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 26px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 13px;
+  margin: 10px 0 0;
+}
+
+.container {
+  max-width: 650px;
+  margin: 45px auto;
+  padding: 0 18px;
+}
+
+.card {
+  background: white;
+  padding: 35px 28px;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.question {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 23px 20px;
+  margin-bottom: 17px;
+  background: white;
+  border: 2px solid #c5d8df;
+  border-radius: 13px;
+  color: #315c73;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.choice:hover {
+  background: #edf5f7;
+  border-color: #467c91;
+  transform: translateY(-2px);
+}
+
+.choice:last-child {
+  margin-bottom: 0;
+}
+
+.arrow {
+  font-size: 24px;
+  margin-left: 12px;
+}
+
+.note {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  margin-top: 25px;
+}
+
+footer {
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  padding: 20px;
+}
+
+@media(max-width: 480px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  .container {
+    margin: 25px auto;
+  }
+
+  .card {
+    padding: 27px 18px;
+  }
+
+  .choice {
+    font-size: 15px;
+    padding: 20px 14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>団体利用のご案内</h1>
+  <p>ご利用になる施設を選択してください。</p>
+</header>
+
+<main class="container">
+  <div class="card">
+
+    <div class="question">
+      利用施設はどこですか？
+    </div>
+
+    <button class="choice" onclick="goPlaza()">
+      <span>ウエルネス交流プラザ</span>
+      <span class="arrow">›</span>
+    </button>
+
+    <button class="choice" onclick="goStation()">
+      <span>
+        未来創造ステーション／<br>
+        まちなか交流センター／<br>
+        まちなか広場
+      </span>
+      <span class="arrow">›</span>
+    </button>
+
+    <div class="note">
+      該当する施設を選択してお進みください。
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  団体利用区分のご案内
+</footer>
+
+<script>
+
+// ウエルネス交流プラザ
+function goPlaza() {
+  location.href =
+  "https://kotokotokotokoto0428-hub.github.io/plaza-fee-app-renewal/";
+}
+
+// 未来創造ステーション等
+function goStation() {
+  location.href =
+  "https://kotokotokotokoto0428-hub.github.io/-customer_dantai/";
+}
+
+</script>
+
+</body>
+</html>
+
